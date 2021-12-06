@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TimeTable Result</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css"/>
+</head>
+<body style="background: #fafafa">
+    <div style="margin: 30px">
+        <a href="/" class="btn btn-primary">На главную</a>
+    </div>
+    <div style="margin: 30px">
+        <h2 th:utext="'Ваше расписание сохранено с ID: ' + ${resultID} + '.'">ResultTimeTableID</h2>
+        <a th:href="'table/timetable?id=' + ${resultID}" class="btn btn-primary" style="margin-top: 20px"><h5>Открыть расписание</h5></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TimeTable Error</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css"/>
+</head>
+<body style="background: #fafafa">
+    <div style="margin: 30px">
+        <a href="/" class="btn btn-primary">На главную</a>
+    </div>
+    <div style="margin: 30px">
+        <h2 th:utext="'Произошла ошибка: ' + ${error} + '.'">Error</h2>
+    </div>
+</body>
+</html>

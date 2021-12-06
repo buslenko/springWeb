@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TimeTable Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+</head>
+<body style="background: #fafafa">
+<script src="/js/javascript.js"></script>
+    <div style="margin: 30px">
+        <a href="/" class="btn btn-primary">На главную</a>
+    </div>
+    <div style="margin: 10px 30px 30px 30px">
+        <form action="#" th:action="@{/generate}" method="post">
+            <div class="form-group row" style="margin-top: 20px">
+                <div class="col-xs-2">
+                    <label for="roomNumber" class="form-label">Количество кабинетов</label>
+                    <input type="number" class="form-control" id="roomNumber" style="width: 60px" onchange="setRooms()">
+                </div>
+            </div>
+            <div id="rooms">
+            </div>
+            <div class="form-group row" style="margin-top: 20px">
+                <div class="col-xs-2">
+                    <label for="subjectNumber" class="form-label">Количество предметов</label>
+                    <input type="number" class="form-control" id="subjectNumber" style="width: 60px" onchange="setSubjects()">
+                </div>
+            </div>
+            <div id="subjects">
+            </div>
+            <div class="form-group row" style="margin-top: 20px">
+                <div class="col-xs-2">
+                    <label for="professorNumber" class="form-label">Количество преподавателей</label>
+                    <input type="number" class="form-control" id="professorNumber" style="width: 60px" onchange="setProfessors()">
+                </div>
+            </div>
+            <div id="professors">
+            </div>
+            <div class="form-group row" style="margin-top: 20px">
+                <div class="col-xs-2">
+                    <label for="courseNumber" class="form-label">Количество групп</label>
+                    <input type="number" class="form-control" id="courseNumber" style="width: 60px" onchange="setCourses()">
+                </div>
+            </div>
+            <div id="courses">
+            </div>
+            <div style="margin-top: 15px">
+                <input type="submit" class="btn btn-primary" name="submit" value="Сохранить"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
